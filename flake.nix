@@ -8,9 +8,7 @@
     nixvim,
     flake-parts,
   } @ inputs: let
-    config = {
-      colorschemes.gruvbox.enable = true;
-    };
+    config = import ./config.nix;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = [
@@ -26,7 +24,9 @@
         ...
       }: let
         nixvim' = nixvim.legacyPackages."${system}";
-        nvim = nixvim'.makeNixvim config;
+        nvim = nixvim'.makeNixvimWithModule {
+          module = config;
+        };
       in {
         packages = {
           inherit nvim;
