@@ -1,6 +1,5 @@
 {
   description = "Personal Neovim configuration";
-
   inputs.nixvim.url = "github:nix-community/nixvim";
 
   outputs = {
