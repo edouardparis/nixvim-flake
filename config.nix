@@ -27,5 +27,8 @@
     swapfile = false;
   };
 
-  config.colorschemes.one.enable = true;
+  config.colorschemes.catppuccin = {
+    enable = true;
+    transparentBackground = true;
+  };
 }
