@@ -5,7 +5,7 @@ New neovim configuration flake using the nix-community/nixvim flake
 Try with:
 
 ```
-nix run github:edouardparis/nixvim-flake 
+nix run github:edouardparis/nixvim-flake
 ```
 
 Install in `configuration.nix`:
