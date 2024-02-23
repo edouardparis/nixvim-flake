@@ -10,7 +10,7 @@
       lua = [ "stylua" ];
       nix = [ "nixfmt" ];
       python = [ "isort" "black" ];
-      rust = [ "rustfmt" ];
+      rust = [ "cargo fmt" ];
       sh = [ "shfmt" ];
     };
 
