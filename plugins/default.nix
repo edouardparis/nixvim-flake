@@ -1,6 +1,7 @@
 {
   imports = [
     ./cmp.nix
+    ./fmt.nix
     ./lsp.nix
     ./rustaceanvim.nix
     ./telescope.nix
