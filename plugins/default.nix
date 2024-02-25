@@ -7,7 +7,8 @@
     ./rustaceanvim.nix
     ./telescope.nix
     ./treesitter.nix
+    ./trouble.nix
   ];
 
-  plugins.lightline.enable = true;
+  plugins.lualine.enable = true;
 }
