@@ -1,6 +1,7 @@
 {
   imports = [
     ./cmp.nix
+    ./fidget.nix
     ./fmt.nix
     ./lsp.nix
     ./rustaceanvim.nix
