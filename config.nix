@@ -5,6 +5,12 @@
     ./keymappings.nix
   ];
 
+
+  config.clipboard = {
+    register = "unnamedplus";
+    providers.wl-copy.enable = true;
+  };
+
   config.options = {
     updatetime = 100;
 
