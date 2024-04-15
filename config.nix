@@ -31,6 +31,7 @@
     autoindent = true;
 
     swapfile = false;
+    termguicolors = true;
   };
 
   config.colorschemes.catppuccin = {
