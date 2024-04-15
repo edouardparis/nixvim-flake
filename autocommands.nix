@@ -12,12 +12,6 @@
       pattern = "nix";
       command = "setlocal tabstop=2 shiftwidth=2";
     }
-    # Set indentation to 2 spaces for js files
-    {
-      event = "FileType";
-      pattern = "javascript";
-      command = "setlocal tabstop=2 shiftwidth=2";
-    }
 
     # Enable spellcheck for some filetypes
     {
