@@ -12,8 +12,9 @@
 
     cmp_luasnip = {enable = true;};
 
-    nvim-cmp = {
+    cmp = {
       enable = true;
+      settings =  {
       sources = [
         {name = "nvim_lsp";}
         {name = "luasnip";}
@@ -104,11 +105,7 @@
         "<C-Space>" = "cmp.mapping.complete()";
         "<C-e>" = "cmp.mapping.close()";
         "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
-        "<Tab>" = {
-          modes = ["i" "s"];
-          action =
-            # lua
-            ''
+        "<Tab>" = ''
               function(fallback)
                 if cmp.visible() then
                   cmp.select_next_item()
@@ -119,12 +116,7 @@
                 end
               end
             '';
-        };
-        "<S-Tab>" = {
-          modes = ["i" "s"];
-          action =
-            # lua
-            ''
+        "<S-Tab>" = ''
               function(fallback)
                 if cmp.visible() then
                   cmp.select_prev_item()
@@ -135,8 +127,8 @@
                 end
               end
             '';
-        };
       };
+    };
     };
   };
 }
