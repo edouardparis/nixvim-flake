@@ -14,6 +14,21 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('package.json')";
       };
+      # rust
+      rust-analyzer = {
+        enable = true;
+        installCargo = false;
+        installRustc = false;
+        settings = {
+          checkOnSave = true;
+          check = {
+            command = "clippy";
+          };
+          procMacro = {
+            enable = true;
+          };
+        };
+      };
     };
     keymaps.lspBuf = {
       "gd" = "definition";
