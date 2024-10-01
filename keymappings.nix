@@ -18,7 +18,7 @@
     {
       mode = "n";
       key = "<leader>tt";
-      action = "<cmd>TroubleToggle<cr>";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
       options = {
         silent = true;
         desc = "Workspace Diagnostics (Trouble)";
@@ -27,7 +27,7 @@
     {
       mode = "n";
       key = "<leader>tc";
-      action = "<CMD>TroubleClose<CR>";
+      action = "<cmd>Trouble close<cr>";
     }
   ];
 }
