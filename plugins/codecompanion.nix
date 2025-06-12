@@ -33,7 +33,7 @@
               },
               schema = {
                 model = {
-                  default = "anthropic/claude-opus-4",
+                  default = "mistralai/devstral-small",
                 },
               },
             })
@@ -43,13 +43,13 @@
 
       strategies = {
         agent = {
-          adapter = "ollama";
+          adapter = "openrouter";
         };
         chat = {
-          adapter = "ollama";
+          adapter = "openrouter";
         };
         inline = {
-          adapter = "ollama";
+          adapter = "openrouter";
         };
       };
     };
