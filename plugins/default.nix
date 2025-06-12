@@ -1,6 +1,7 @@
 {
   imports = [
     ./cmp.nix
+    ./codecompanion.nix
     ./comment.nix
     ./fidget.nix
     ./fmt.nix

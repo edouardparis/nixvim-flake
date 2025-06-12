@@ -10,12 +10,11 @@
       cssls.enable = true;
       jsonls.enable = true;
       eslint.enable = true;
-      tsserver = {
+      ts_ls = {
         enable = true;
-        rootDir = "require 'lspconfig.util'.root_pattern('package.json')";
       };
       # rust
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
         installCargo = false;
         installRustc = false;

@@ -11,7 +11,7 @@
     providers.wl-copy.enable = true;
   };
 
-  config.options = {
+  config.opts = {
     updatetime = 100;
 
     smartcase = true;
@@ -35,6 +35,6 @@
 
   config.colorschemes.catppuccin = {
     enable = true;
-    transparentBackground = true;
+    settings.transparent_background = true;
   };
 }
