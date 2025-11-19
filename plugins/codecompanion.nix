@@ -2,7 +2,7 @@
   plugins.codecompanion = {
     enable = true;
     settings = {
-      adapters = {
+      adapters.http = {
         ollama.__raw = ''
               function()
                 return require('codecompanion.adapters').extend('ollama', {
@@ -33,7 +33,7 @@
               },
               schema = {
                 model = {
-                  default = "mistralai/devstral-small",
+                  default = "anthropic/claude-haiku-4.5",
                 },
               },
             })
@@ -66,6 +66,9 @@
           adapter = "openrouter";
         };
         inline = {
+          adapter = "openrouter";
+        };
+        cmd = {
           adapter = "openrouter";
         };
       };
