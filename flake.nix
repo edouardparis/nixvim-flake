@@ -18,12 +18,16 @@
       ];
 
       perSystem = {
-        pkgs,
         system,
         ...
       }: let
+        pkgs = import nixvim.inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
         nixvim' = nixvim.legacyPackages."${system}";
         nvim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
           module = config;
         };
       in {

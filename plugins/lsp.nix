@@ -4,6 +4,7 @@
     servers = {
       fsautocomplete.enable = true;
       nixd.enable = true;
+      gleam.enable = true;
 
       # web
       html.enable = true;

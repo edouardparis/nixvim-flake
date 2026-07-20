@@ -5,6 +5,7 @@
       formatters_by_ft = {
         "*" = [ "codespell" ];
         "_" = [ "trim_whitespace" ];
+        gleam = [ "gleam" ];
         go = [ "goimports" "golines" "gofmt" "gofumpt" ];
         javascript = [[ "prettierd" "prettier" ]];
         json = [ "jq" ];
