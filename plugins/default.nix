@@ -5,6 +5,7 @@
     ./comment.nix
     ./fidget.nix
     ./fmt.nix
+    ./lean.nix
     ./lsp.nix
     ./rustaceanvim.nix
     ./telescope.nix
